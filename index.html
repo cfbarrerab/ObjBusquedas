@@ -1,0 +1,48 @@
+<script>
+    function buscElemQuim(simbolo){
+        var elemento;
+        switch (simbolo){
+            case "Al":
+                elemento = "Aluminio";
+                break;
+            case "S":
+                elemento = "Azufre";
+                break; 
+            case "Cl":
+                elemento = "Cloro";
+                break; 
+            case "He":
+                elemento = "Helio";
+                break;
+            case "B":
+                elemento = "Boro";
+                break; 
+            case "Li":
+                elemento = "Litio";
+                break;               
+
+        }
+        return elemento;
+    }
+
+    console.log(buscElemQuim("Al"));
+    console.log(buscElemQuim("B"));
+    console.log(buscElemQuim("Li"));
+    console.log(buscElemQuim("Cl"));
+
+function objElemQui(symbol) {
+    var objSymbQui = {
+        "Al" : "Aluminio",
+        "S" : "Azufre",
+        "Cl" : "Cloro",
+        "He" : "Helio", 
+        "B" : "Boro",
+        "Li" : "Litio"
+    };
+    return objSymbQui[symbol];
+}
+console.log(objElemQui("Cl"));
+console.log(objElemQui("S"));
+console.log(objElemQui("He"));
+
+</script>
